@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Pantalla inicial -->
+    <div id="screen-start" class="screen">
+        <div class="gif-container">
+            <img src="https://64.media.tumblr.com/ed8b1a6d78c2e39596a631be420a8d08/e26e1f547fd0f670-97/s500x750/f8788d22870c68d4fc49974f8c5478e49d6d5bed.gif" alt="Gif animado">
+        </div>
+        <h2>A ver cual sera la pregunta de hoy? jiji</h2>
+        <button onclick="playAudio()" class="music-button">
+            Activar música
+        </button>
+        <button onclick="showScreen('screen-second')">¡Si me amas dale al botoncito!</button>
+    </div>
+
+    <!-- Otras pantallas... -->
+
+    <!-- Reproductor de audio -->
+    <audio id="audio" loop>
+        <source src="audio/cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <!-- Segunda pantalla -->
+    <div id="screen-second" class="screen">
+        <div class="gif-container">
+            <img src="https://media.tenor.com/xIEKHAcKvv8AAAAj/sanrio.gif" alt="Gif animado">
+        </div>
+        <h2>Hola mi princesa hermosisisisisisimaaaa, como estas ademas de preciosa, linda, bella, divina, sexy, guapiisisisisimaaaaa, 
+            tu hombre te quiere preguntar algo..
+            quiere saber si.....😊</h2>
+        <button onclick="showScreen('screen-third')">Si, ti amo</button>
+    </div>
+
+    <!-- Tercera pantalla -->
+    <div id="screen-third" class="screen">
+        <div class="gif-container">
+            <img src="https://media.tenor.com/z8swAVI-pygAAAAj/cinnamoroll-sanrio-characters.gif" alt="Gif animado">
+        </div>
+        <h2>Puede estar siempre en tu vida, prometo hacerte reir y 
+            comer mucho y sobre todo...
+            quisiera saber si tu...</h2>
+        <button onclick="showScreen('main-content')">A ver el chismecito</button>
+    </div>
+
+    <!-- Contenido principal (oculto inicialmente) -->
+    <div id="main-content" class="screen">
+        <div class="hearts-top">
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+        </div>
+
+        <div class="message">
+            <img src="https://media.tenor.com/QJ6Ks-R2lAYAAAAj/cinnamon-roll.gif" class="teddy-gif teddy-left" alt="Osito animado">
+            <h1>¿Aceptas ser mi San Valentín? 💖</h1>
+            <img src="https://www.gifcen.com/wp-content/uploads/2024/05/cinnamoroll-gif-3.gif" class="teddy-gif teddy-right" alt="Osito animado">
+        </div>
+
+        <div class="hearts-bottom">
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+        </div>
+
+        <!-- Botón para mostrar el nuevo segmento -->
+        <button onclick="showScreen('main-two')">ademas...</button>
+    </div>
+
+    <!-- Nuevo segmento (oculto inicialmente) -->
+    <div id="main-two" class="screen">
+        <div class="hearts-top">
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+        </div>
+
+        <div class="message">
+            <img src="https://i.pinimg.com/originals/22/cd/dd/22cddddeca4405f79bfb94713c1fba52.gif" class="teddy-gif teddy-left" alt="Osito animado">
+            <h1>Pero mas que mi san valentin, quiero que seas mi dia a dia, no solo una fecha si no.. 
+                todas las que la vida nos regale,me gustaria que seas mi valentin solamente, 
+                pero prefiero que seas my only one... te amo mil millones mi pequeña niña </h1>
+            <img src="https://imgcdn.sigstick.com/ZSbFhxYqLbLgszIaC5S1/17-1.png" class="teddy-gif teddy-right" alt="Osito animado">
+        </div>
+
+        <div class="hearts-bottom">
+            <i class="fas fa-heart heart"></i>
+            <i class="fas fa-heart heart"></i>
+        </div>
+    </div>
+
+    <!-- Reproductor de audio -->
+    <audio autoplay loop>
+        <source src="D:\Programas\cita\cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
